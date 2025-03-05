@@ -73,3 +73,82 @@ nav .sign-up-btn .login-btn {
   font-size: 16px;
   font-weight: 700;
 }
+/* NAVBAR ENDS HERE */
+
+/* HERO SECTION STARTS HERE */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: full;
+  background-image: linear-gradient(
+    to top,
+
+    #8473ef,
+    #afa1f6,
+    #d7d0fc,
+    #ffffff
+  );
+  padding: 20px auto;
+}
+.hero-btn {
+  height: 38px;
+  width: 200px;
+  background-color: #eef2ff;
+  padding: 6px 12px;
+  border-radius: 24px;
+  margin-top: 20px;
+}
+.hero-btn h3 {
+  color: #4f46e5;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px auto;
+}
+.hero-text {
+  padding: 30px 113px;
+  text-align: center;
+  max-width: 800px;
+  height: 136px;
+}
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 60px;
+  color: var(--h1-color-primary);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 16px;
+  color: var(--p-color-primary);
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.buttons {
+  margin: 20px auto;
+}
+.hero-image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30%;
+}
+.desktop-image {
+  position: absolute;
+  right: 15%;
+}
+.desktop-image img {
+  width: 100%;
+  height: auto;
+}
+.mobile-image {
+  position: relative;
+  left: 98%;
+  top: 40%;
+}
