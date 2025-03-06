@@ -197,6 +197,7 @@ nav .sign-up-btn .login-btn {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 .feature-btn h3 {
@@ -260,7 +261,7 @@ nav .sign-up-btn .login-btn {
 .round-home-icon {
   width: 55px;
   height: 75px;
-  border-radius: 60%; /* Makes it a perfect circle */
+  border-radius: 60%;
   background-color: #eef2ff;
   display: flex;
   justify-content: center;
@@ -328,7 +329,182 @@ nav .sign-up-btn .login-btn {
   padding: 20px;
   width: 100%;
 }
-/* RESPONSIVE DESIGN */
+
+/* WHO'S THIS FOR SECTION STARTS HERE */
+.whos-it-for {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+.whos-it-for-text h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+.whos-it-for-text p {
+  font-size: 16px;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.tab-btn-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #8473ef;
+}
+.tab-btn-card tab-btn-text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tab-btn-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tab-btn {
+  background: #eef2ff;
+  color: #4f46e5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.tab-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* TESTIMONIALS SECTION STARTS HERE */
+.testimonials {
+  text-align: center;
+  padding: 40px 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.testimonial-upper .feature-btn {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonial {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Load More Button */
+.load-more-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hidden testimonials for mobile */
+.hidden {
+  display: none;
+}
+
+/* RESPONSIVENESS MEDIA QUERIES */
 @media (max-width: 1024px) {
   nav {
     padding: 16px 40px;
@@ -463,7 +639,7 @@ nav .sign-up-btn .login-btn {
   }
 
   .results-data-text {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     text-align: center;
     padding: 10px;
   }
@@ -487,6 +663,9 @@ nav .sign-up-btn .login-btn {
 
   .data-card {
     padding: 15px;
+  }
+  .load-more-btn {
+    display: block;
   }
 }
 
@@ -585,5 +764,95 @@ nav .sign-up-btn .login-btn {
 
   .data-card {
     padding: 10px;
+  }
+}
+
+/* something else */
+
+.procrastinators-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* Left Side: Text & Tabs */
+.text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tab-item {
+  cursor: pointer;
+  padding-left: 20px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 5px;
+}
+
+.tab-item p {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.tab-item.active {
+  border-left: 4px solid #4f46e5;
+}
+
+/* Right Side: Image */
+.image-content img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 1024px) {
+  .procrastinators-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .image-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-content img {
+    width: 80%;
   }
 }
