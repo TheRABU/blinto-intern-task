@@ -142,6 +142,7 @@ nav .sign-up-btn .login-btn {
   justify-content: center;
   align-items: center;
   padding-top: 8%;
+  padding-bottom: 8%;
 }
 .desktop-image {
   position: absolute;
@@ -156,7 +157,22 @@ nav .sign-up-btn .login-btn {
   left: 35%;
   top: 40%;
 }
-
+/* HERO SECTION ENDS HERE */
+/* COMPANY LOGO SECTION STARTS HERE */
+.company-logo-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 20%;
+  width: 100%;
+  background-color: #f8fafc;
+}
+.company-logo img {
+  width: 100px;
+  height: auto;
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
   nav {
@@ -214,6 +230,13 @@ nav .sign-up-btn .login-btn {
     width: 90%;
     height: auto;
   }
+
+  .company-logo-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -246,5 +269,11 @@ nav .sign-up-btn .login-btn {
   .mobile-image img {
     width: 100%;
     height: auto;
+  }
+  .company-logo-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30% auto;
   }
 }
