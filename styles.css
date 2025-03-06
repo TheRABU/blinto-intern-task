@@ -184,6 +184,9 @@ nav .sign-up-btn .login-btn {
   width: 100%;
 }
 .feature-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 38px;
   width: auto;
   max-width: 200px;
@@ -191,23 +194,30 @@ nav .sign-up-btn .login-btn {
   padding: 6px 12px;
   border-radius: 24px;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
 .feature-btn h3 {
   color: #4f46e5;
   font-size: 14px;
   font-weight: 700;
   margin: 0;
-  padding: 0;
 }
 .feature-text {
   max-width: 800px;
   text-align: center;
+  align-items: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+/* .feature-text .feature-btn h3 {
+  width: 100%;
+  text-align: center;
+  left: 50%;
+} */
 .feature-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
