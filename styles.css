@@ -166,6 +166,7 @@ nav .sign-up-btn .login-btn {
   gap: 20px;
   padding: 20px 20%;
   width: 100%;
+  height: auto;
   background-color: #f8fafc;
 }
 .company-logo img {
@@ -243,7 +244,90 @@ nav .sign-up-btn .login-btn {
   text-align: center;
   margin-bottom: 20px;
 }
+/* FEATURES SECTION ENDS HERE */
 
+/* RESULTS / ACHIEVEMENTS SECTION STARTS HERE */
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  width: 100%;
+  max-height: 560px;
+  background-color: #f8fafc;
+}
+.round-home-icon {
+  width: 55px;
+  height: 75px;
+  border-radius: 60%; /* Makes it a perfect circle */
+  background-color: #eef2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+}
+.round-home-icon img {
+  height: auto;
+  object-fit: contain;
+}
+.results-text {
+  max-width: 800px;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.results-text h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--h1-color-primary);
+  margin: 20px 0;
+}
+.results-text p {
+  font-size: 16px;
+  color: var(--p-color-primary);
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.results-data-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.results-data-text h1 {
+  font-size: 68px;
+  font-weight: 800;
+  color: #4f46e5;
+  margin: 20px 0;
+}
+.results-data-text p {
+  font-size: 16px;
+  color: var(--p-color-primary);
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.results-data-text hr {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+}
+.data-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
   nav {
@@ -279,6 +363,27 @@ nav .sign-up-btn .login-btn {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 10px;
+  }
+  .results-text h1 {
+    font-size: 30px;
+  }
+
+  .results-text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .results-data-text h1 {
+    font-size: 50px;
+  }
+
+  .results-data-text p {
+    font-size: 14px;
+  }
+
+  .round-home-icon {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -335,6 +440,53 @@ nav .sign-up-btn .login-btn {
 
   .feature-card {
     max-width: 100%;
+  }
+  .results {
+    height: auto;
+  }
+  .results {
+    padding: 10% 5%;
+  }
+
+  .results-text {
+    padding: 10px;
+  }
+
+  .results-text h1 {
+    font-size: 26px;
+    margin: 15px 0;
+  }
+
+  .results-text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .results-data-text {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .results-data-text h1 {
+    font-size: 40px;
+    margin: 15px 0;
+  }
+
+  .results-data-text p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .round-home-icon {
+    width: 45px;
+    height: 45px;
+    margin: 15px 0;
+    padding: 8px;
+  }
+
+  .data-card {
+    padding: 15px;
   }
 }
 
@@ -405,5 +557,33 @@ nav .sign-up-btn .login-btn {
   .feature-card-text-div {
     font-size: 14px;
     line-height: 24px;
+  }
+  .results {
+    padding: 12% 5%;
+  }
+
+  .results-text h1 {
+    font-size: 22px;
+  }
+
+  .results-text p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .results-data-text h1 {
+    font-size: 34px;
+    margin: 10px 0;
+  }
+
+  .round-home-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 6px;
+  }
+
+  .data-card {
+    padding: 10px;
   }
 }
