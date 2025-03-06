@@ -497,6 +497,26 @@ span {
   gap: 20px;
   padding: 0 8%;
 }
+.address-upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  right: 3%;
+  padding: 20px 15px;
+  width: 100%;
+}
+.address-upper h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--h1-color-primary);
+  margin-bottom: 10px;
+}
+.address-upper p {
+  font-size: 16px;
+  color: var(--p-color-primary);
+  margin-bottom: 20px;
+}
 .address-card {
   display: flex;
   flex-direction: column;
@@ -515,8 +535,13 @@ span {
 .address-card h3 {
   font-size: 20px;
   font-weight: 800;
-  color: #1a202c;
+  color: var(--h1-color-primary);
   margin-bottom: 10px;
+}
+.address-card p {
+  font-size: 16px;
+  color: var(--p-color-primary);
+  margin-bottom: 20px;
 }
 
 /* RESPONSIVENESS MEDIA QUERIES */
@@ -823,10 +848,4 @@ span {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-/* something else */
-
-/* 📱 Responsive Design */
-@media screen and (max-width: 1024px) {
 }
