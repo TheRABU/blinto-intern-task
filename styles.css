@@ -330,89 +330,71 @@ nav .sign-up-btn .login-btn {
   width: 100%;
 }
 
-/* WHO'S THIS FOR SECTION STARTS HERE */
-.whos-it-for {
-  width: 100%;
+/* SLIDER SECTION STARTS HERE */
+.procrastinators-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
   max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+  margin: auto;
   padding: 50px 20px;
 }
-.whos-it-for-text h2 {
-  font-size: 32px;
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-content h2 {
+  font-size: 28px;
   font-weight: 800;
-  color: #4f46e5;
+  color: #1a202c;
   margin-bottom: 10px;
 }
 
-.whos-it-for-text p {
+.text-content p {
   font-size: 16px;
   color: #4a5568;
   margin-bottom: 20px;
 }
 
-.tab {
+.tabs {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
-}
-.tab-btn-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  max-width: 300px;
-  height: auto;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-color: #8473ef;
-}
-.tab-btn-card tab-btn-text {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.tab-btn-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.tab-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.tab-btn {
-  background: #eef2ff;
-  color: #4f46e5;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 20px;
+.tab-item {
   cursor: pointer;
+  padding-left: 20px;
+  border-left: 4px solid transparent;
   transition: all 0.3s ease;
 }
 
-.tab-btn.active,
-.tab-btn:hover {
-  background: #4f46e5;
-  color: #fff;
+.tab-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 5px;
 }
 
-.tab-image img {
-  width: 300px;
-  height: auto;
+.tab-item p {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.tab-item.active {
+  border-left: 4px solid #4f46e5;
+}
+
+.image-content img {
+  width: 400px;
+  max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/* SLIDER ENDS HERE */
 
 /* TESTIMONIALS SECTION STARTS HERE */
 .testimonials {
@@ -424,6 +406,7 @@ nav .sign-up-btn .login-btn {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: #f8fafc;
 }
 .testimonial-upper .feature-btn {
   height: auto;
@@ -448,14 +431,15 @@ nav .sign-up-btn .login-btn {
   gap: 20px;
   max-width: 1200px;
   margin: auto;
+  padding: 0 40px;
 }
 
 .testimonial {
-  background: white;
+  background: transparent;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
   text-align: left;
+  border: 2px solid #e2e8f0;
 }
 
 .stars {
@@ -493,15 +477,46 @@ span {
   margin-top: 20px;
   padding: 10px 15px;
   border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  border-radius: 26px;
   cursor: pointer;
+  font-size: 16px;
 }
+/* TESTIMONIAL SECTION ENDS HERE */
 
-/* Hidden testimonials for mobile */
 .hidden {
   display: none;
+}
+
+/* ADDRESS SECTION STARTS HERE */
+.address-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 8%;
+}
+.address-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  left: 0;
+  padding: 20px 15px;
+  width: 100%;
+  border-radius: 24px;
+  border: 2px solid #e2e8f0;
+  height: auto;
+}
+.address-card img {
+  margin-bottom: 10px;
+}
+.address-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 10px;
 }
 
 /* RESPONSIVENESS MEDIA QUERIES */
@@ -560,6 +575,28 @@ span {
   .round-home-icon {
     width: 50px;
     height: 50px;
+  }
+  .procrastinators-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .image-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-content img {
+    width: 80%;
+  }
+  .testimonial-grid {
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -664,8 +701,24 @@ span {
   .data-card {
     padding: 15px;
   }
+  .testimonial-grid {
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .load-more-btn {
     display: block;
+  }
+  .address-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30%;
+  }
+  .address-cards {
+    padding: 10px;
   }
 }
 
@@ -765,94 +818,15 @@ span {
   .data-card {
     padding: 10px;
   }
+  .testimonial-grid {
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* something else */
 
-.procrastinators-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 50px 20px;
-}
-
-/* Left Side: Text & Tabs */
-.text-content {
-  flex: 1;
-  max-width: 50%;
-}
-
-.text-content h2 {
-  font-size: 28px;
-  font-weight: 800;
-  color: #1a202c;
-  margin-bottom: 10px;
-}
-
-.text-content p {
-  font-size: 16px;
-  color: #4a5568;
-  margin-bottom: 20px;
-}
-
-/* Tabs */
-.tabs {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.tab-item {
-  cursor: pointer;
-  padding-left: 20px;
-  border-left: 4px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.tab-item h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #1a202c;
-  margin-bottom: 5px;
-}
-
-.tab-item p {
-  font-size: 14px;
-  color: #4a5568;
-}
-
-.tab-item.active {
-  border-left: 4px solid #4f46e5;
-}
-
-/* Right Side: Image */
-.image-content img {
-  width: 400px;
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 /* 📱 Responsive Design */
 @media screen and (max-width: 1024px) {
-  .procrastinators-section {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .text-content {
-    max-width: 100%;
-  }
-
-  .image-content {
-    width: 100%;
-    text-align: center;
-  }
-
-  .image-content img {
-    width: 80%;
-  }
 }
