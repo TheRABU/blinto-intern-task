@@ -547,9 +547,11 @@ span {
 /* FAQ SECTION STARTS HERE */
 .faq-section {
   width: 100%;
-  margin: 50px auto;
+  margin-top: 40px;
+
   padding: 20px;
-  background-color: #f8fafc;
+  background-color: #eef2ff;
+  overflow-y: auto;
 }
 .faq {
   max-width: 800px;
@@ -599,7 +601,6 @@ span {
   font-weight: bold;
   cursor: pointer;
   display: flex;
-
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
@@ -640,6 +641,92 @@ span {
   transform: rotate(180deg);
 }
 /* FAQ SECTION ENDS HERE */
+
+/* DOWNLOAD IMAGES / APP SECTION STARTS HERE */
+
+.download-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow-y: hidden;
+  background-color: #f8fafc;
+}
+
+.download-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  padding: 30px;
+  margin: 40px;
+}
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+  gap: 20px;
+}
+.learn-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px 12px 12px;
+  width: 126px;
+  height: 48px;
+  border: 1px solid;
+  border-color: #cbd5e1;
+  border-radius: 24px;
+  color: #475569;
+  font-size: 16px;
+  font-weight: 700;
+}
+.get-started-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px 12px 12px;
+  width: 126px;
+  height: 48px;
+  border: 1px solid;
+  border-radius: 24px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.download-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #f8fafc;
+  width: 100%;
+  height: auto;
+  position: static;
+  overflow: hidden;
+  width: 100%;
+}
+.download-images img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 28px;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.download-images .image1 {
+  transform: translate(10%, 12%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 26px;
+}
+.download-images .image2 {
+  transform: translate(30%, -12%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 26px;
+}
+
 /* RESPONSIVENESS MEDIA QUERIES */
 @media (max-width: 1024px) {
   nav {
@@ -844,6 +931,86 @@ span {
   .address-cards {
     padding: 10px;
   }
+  .download-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .download-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 5px;
+  }
+  .download-content p {
+    margin-bottom: 8px;
+  }
+  .download-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+  }
+  .learn-more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid;
+    border-color: #cbd5e1;
+    border-radius: 24px;
+    color: #4f46e5;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .get-started-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid;
+    border-radius: 24px;
+    background-color: #4f46e5;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .download-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    width: 100%;
+    padding: 0 20%;
+    gap: 10px;
+  }
+  .download-images img {
+    border-radius: 16px;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+  }
+  .download-images .image1 {
+    transform: translate(0, 3%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+  .download-images .image2 {
+    transform: translate(16%, -1%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -949,7 +1116,7 @@ span {
   }
 }
 
-/* FOR FAQ  */
+/* FOR FAQ ONLY EXCEPTIONAL */
 @media (max-width: 600px) {
   .faq-section {
     padding: 3px;
