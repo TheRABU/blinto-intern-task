@@ -102,9 +102,9 @@ nav .sign-up-btn .login-btn {
   box-sizing: border-box;
 }
 
-/* .mobile-links.hidden {
+.mobile-links .hidden {
   display: none;
-} */
+}
 /* HERO SECTION STARTS HERE */
 .hero {
   display: flex;
@@ -735,7 +735,6 @@ span {
   height: auto;
   position: static;
   overflow: hidden;
-  width: 100%;
   background-color: #eef2ff;
 }
 .download-images img {
@@ -743,7 +742,7 @@ span {
   max-width: 100%;
   border-radius: 28px;
   background-color: #eef2ff;
-  height: 100%;
+  height: auto;
   gap: 10px;
   box-shadow: -24px 18px 70px -1px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: -24px 18px 70px -1px rgba(0, 0, 0, 0.23);
@@ -856,6 +855,7 @@ footer {
   nav ul {
     display: none;
   }
+
   .hero-text {
     padding: 20px 40px;
   }
@@ -941,7 +941,7 @@ footer {
   }
 
   .mobile-links {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;

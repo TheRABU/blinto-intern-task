@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const menuBtn = document.getElementById("menu-icon");
 const menuLinksDiv = document.getElementById("mobile-links");
 
-menuBtn.addEventListener("click", function () {
+menuBtn.addEventListener("click", function (e) {
   if (
     menuLinksDiv.style.display === "none" ||
     menuLinksDiv.style.display === ""
