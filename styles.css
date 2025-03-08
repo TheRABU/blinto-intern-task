@@ -1075,6 +1075,17 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    height: auto;
+  }
+  .download-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 10%;
+    height: full;
   }
 
   .download-content {
