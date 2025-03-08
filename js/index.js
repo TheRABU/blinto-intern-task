@@ -51,7 +51,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // NAV_MENU
 
-const toggleMobileNav = () => {
-  const mobileLinks = document.getElementById("mobile-links");
-  mobileLinks.classList.toggle("visible");
-};
+const menuBtn = document.getElementById("menu-icon");
+const menuLinksDiv = document.getElementById("mobile-links");
+
+menuBtn.addEventListener("click", function () {
+  if (
+    menuLinksDiv.style.display === "none" ||
+    menuLinksDiv.style.display === ""
+  ) {
+    menuLinksDiv.style.display = "flex";
+  } else {
+    menuLinksDiv.style.display = "none";
+  }
+});

@@ -73,12 +73,38 @@ nav .sign-up-btn .login-btn {
   font-weight: 700;
 }
 /* NAVBAR ENDS HERE */
-/* Menu Icon (Hidden on Desktop) */
 .menu-icon {
   display: none;
   font-size: 24px;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 13px;
+  background-color: #eef2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
+
+.mobile-links {
+  display: none;
+  position: absolute;
+  top: 60px;
+  transform: translateX(-50%);
+  width: 200px;
+  max-width: 90vw;
+  background-color: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* .mobile-links.hidden {
+  display: none;
+} */
 /* HERO SECTION STARTS HERE */
 .hero {
   display: flex;
@@ -908,12 +934,42 @@ footer {
   nav {
     padding: 16px 24px;
   }
-  .menu-icon {
-    display: block;
-  }
+
   nav .sign-up-btn {
     display: none;
   }
+  .menu-icon {
+    display: flex;
+    position: relative;
+  }
+
+  .mobile-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8fafc;
+    border-radius: 16px;
+  }
+  .mobile-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-links ul li {
+    list-style: none;
+    max-width: 250px;
+    padding: 10px;
+    gap: 10px;
+    background-color: #eef2ff;
+    border-radius: 20px;
+  }
+  .mobile-links ul li a {
+    color: #4f46e5;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
   .hero-text {
     padding: 15px 20px;
   }
