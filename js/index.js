@@ -37,3 +37,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Footer toogle
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const footerArrow = document.querySelector(".footer-arrow button");
+//   const lowerFooter = document.querySelector(".lower-footer");
+
+//   footerArrow.addEventListener("click", function () {
+//     lowerFooter.classList.toggle("collapsed");
+//   });
+// });
+
+// NAV_MENU
+
+const toggleMobileNav = () => {
+  const mobileLinks = document.getElementById("mobile-links");
+  mobileLinks.classList.toggle("visible");
+};
