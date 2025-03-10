@@ -689,7 +689,7 @@ span {
   align-items: start;
   gap: 10px;
   padding: 30px;
-  margin: 40px;
+  margin: 9px;
 }
 .download-buttons {
   display: flex;
@@ -757,6 +757,9 @@ span {
   transform: translate(30%, -12%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 26px;
+}
+.download-images-mobile-only {
+  display: none;
 }
 
 /* DOWNLOAD IMAGES / APP SECTION ENDS HERE */
@@ -1078,7 +1081,7 @@ footer {
     height: auto;
   }
   .download-images {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1109,11 +1112,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 12px 12px 12px;
+    padding: 12px;
     width: 100%;
     height: 48px;
-    border: 1px solid;
-    border-color: #cbd5e1;
+    border: 1px solid #4f46e5;
+    border-color: transparent;
     border-radius: 24px;
     color: #4f46e5;
     font-size: 16px;
@@ -1134,7 +1137,7 @@ footer {
     font-weight: 700;
   }
 
-  .download-images {
+  /* .download-images {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1160,6 +1163,37 @@ footer {
     transform: translate(16%, -1%);
 
     border-radius: 26px;
+  } */
+  .download-images-mobile-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    padding: 0 10%;
+    position: static;
+    background-color: #eef2ff;
+  }
+  .download-images-mobile-only .image1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    transform: translate(0, 3%);
+  }
+  .download-images-mobile-only .image2 {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    position: relative;
+    transform: translate(16%, -1%);
+  }
+  .download-images-mobile-only img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 26px;
+    background-color: #eef2ff;
+    height: auto;
+    gap: 10px;
   }
   .upper-footer {
     display: flex;
@@ -1291,7 +1325,7 @@ footer {
     padding: 5px;
   }
   .data-card h1 {
-    font-size: 16px;
+    font-size: 40px;
   }
 
   .testimonial-grid {
